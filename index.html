@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Examen Final 5° Grado</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<form action="https://formsubmit.co/josejuansegundo27@gmail.com" method="POST" id="examen">
+
+<h1>Examen Final de 5° Grado</h1>
+<h2>Sistemas de Información</h2>
+<h3>Capacitación para el Trabajo</h3>
+<h4>Ing. José Juan Segundo</h4>
+
+<label>Selecciona tu nombre:</label>
+<select id="alumno" name="Alumno" onchange="mostrarNombre()" required>
+<option value="">-- Selecciona --</option>
+<option>DE LUNA MENDEZ SANDRA</option>
+<option>FERNANDEZ FRANCISCO GAEL</option>
+<option>GARCIA MENDEZ YOLANDA ARIZBETH</option>
+<option>GARCIA PEREZ NELLY ARLETTE</option>
+<option>HERNANDEZ DE LA CRUZ ANGEL GABRIEL</option>
+<option>LEYVA SANTIAGO FERNANDO</option>
+<option>MENDEZ VALENCIA EVA MARIA</option>
+<option>RAMIREZ MORENO LEIDY KARINA</option>
+<option>SOTO GONZALEZ GENESIS</option>
+<option>VICENTE SAN MARTIN CLEMENTE</option>
+<option>GUTIERREZ LAZARO ERICK JAIR</option>
+<option>HERNANDEZ BARRIENTOS JUAN ANTONIO</option>
+<option>SAN MARTIN SAN MARTIN MARIA ANTONIA</option>
+<option>BARRIENTOS NAVA JOSE FRANCISCO</option>
+<option>FRANCISCO PEREZ ARMANDO</option>
+<option>GARCIA GARCIA LEONARDO URIEL</option>
+<option>PERCASTRE SALVADOR CAMILA</option>
+<option>SAN MARTIN HERNANDEZ YOSGART URIEL</option>
+<option>SIMBRON PEREZ SANTIAGO</option>
+<option>VARGAS HERRERA ISRAEL</option>
+</select>
+
+<p><strong>Nombre:</strong> <span id="nombreMostrado"></span></p>
+
+<!-- PREGUNTAS -->
+<div class="pregunta"><p>1. ¿Qué es MongoDB?</p>
+<label><input type="radio" name="p1" value="a"> Base de datos NoSQL</label>
+<label><input type="radio" name="p1" value="b"> Lenguaje de programación</label>
+<label><input type="radio" name="p1" value="c"> Servidor web</label>
+</div>
+
+<div class="pregunta"><p>2. Diferencia MongoDB y MySQL</p>
+<label><input type="radio" name="p2" value="a"> Mongo es NoSQL</label>
+<label><input type="radio" name="p2" value="b"> Son iguales</label>
+<label><input type="radio" name="p2" value="c"> Mongo es hoja de cálculo</label>
+</div>
+
+<div class="pregunta"><p>3. ¿Qué se hace primero?</p>
+<label><input type="radio" name="p3" value="a"> Servidor</label>
+<label><input type="radio" name="p3" value="b"> Base de datos</label>
+<label><input type="radio" name="p3" value="c"> Documento</label>
+</div>
+
+<div class="pregunta"><p>4. ¿Qué va primero?</p>
+<label><input type="radio" name="p4" value="a"> Documento</label>
+<label><input type="radio" name="p4" value="b"> Proyecto</label>
+<label><input type="radio" name="p4" value="c"> Colección</label>
+</div>
+
+<div class="pregunta"><p>5. ¿Qué es primero Proyecto o servidor?</p>
+<label><input type="radio" name="p5" value="a"> Proyecto</label>
+<label><input type="radio" name="p5" value="b"> Servidor</label>
+<label><input type="radio" name="p5" value="c"> Documento</label>
+</div>
+
+<div class="pregunta"><p>6. ¿Qué es primero Proyecto o colección?</p>
+<label><input type="radio" name="p6" value="a"> Proyecto</label>
+<label><input type="radio" name="p6" value="b"> Documento</label>
+<label><input type="radio" name="p6" value="c"> Campo</label>
+</div>
+
+<div class="pregunta"><p>7. ¿que es primero Colección o documento?</p>
+<label><input type="radio" name="p7" value="a"> Documento</label>
+<label><input type="radio" name="p7" value="b"> Colección</label>
+<label><input type="radio" name="p7" value="c"> Servidor</label>
+</div>
+
+<div class="pregunta"><p>8. Orden correcto en MongoDB</p>
+<label><input type="radio" name="p8" value="a"> BD → Colección → Documento</label>
+<label><input type="radio" name="p8" value="b"> Documento → BD</label>
+<label><input type="radio" name="p8" value="c"> Servidor → Documento</label>
+</div>
+
+<div class="pregunta"><p>9. ¿Dónde se usan las bases de datos?</p>
+<label><input type="radio" name="p9" value="a"> Aplicaciones</label>
+<label><input type="radio" name="p9" value="b"> Juegos</label>
+<label><input type="radio" name="p9" value="c"> Teclado</label>
+</div>
+
+<div class="pregunta"><p>10. Orden para usar MongoDB</p>
+<label><input type="radio" name="p10" value="a"> Servidor → BD → Colección</label>
+<label><input type="radio" name="p10" value="b"> Documento → Proyecto</label>
+<label><input type="radio" name="p10" value="c"> Campo → Servidor</label>
+</div>
+
+<div class="pregunta"><p>11. Normas para documentos</p>
+<label><input type="radio" name="p11" value="a"> JSON válido</label>
+<label><input type="radio" name="p11" value="b"> Texto libre</label>
+<label><input type="radio" name="p11" value="c"> Imagen</label>
+</div>
+
+<div class="pregunta"><p>12. ¿Cómo es el formato JSON?</p>
+    <label><input type="radio" name="p12" value="a"> Llave y valor (key : value)</label>
+    <label><input type="radio" name="p12" value="b"> Filas y columnas</label>
+  <label><input type="radio" name="p12" value="c">Gráficas y tablas</label>
+</div>
+
+<input type="hidden" name="Grupo" value="5° Grado - Sistemas de Información">
+<input type="hidden" id="calificacionFinal" name="Calificación">
+
+<button type="button" onclick="calificar()">Calificar examen</button>
+<button type="submit">Enviar al profesor</button>
+
+<h2 id="resultado"></h2>
+
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>
